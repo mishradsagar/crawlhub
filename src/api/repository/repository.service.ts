@@ -1,6 +1,6 @@
 import config from '../../config'
 
-const getRepositoryInfo = async (ownerName) => {
+export const getRepositoryInfo = async (ownerName) => {
   const route = `https://api.github.com/users/${ownerName}/repos`;
   const options = {
     method: 'GET',
@@ -11,9 +11,4 @@ const getRepositoryInfo = async (ownerName) => {
   }
   const result = await fetch(route, options);
   return result;
-}
-
-
-export default {
-  getRepositoryInfo
 }

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import repository from './repository';
-import user from './user';
+import repository from '../api/repository/repository.route';
+import user from '../api/user/user.route';
 
 const router = Router();
 
