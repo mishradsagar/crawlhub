@@ -18,6 +18,18 @@ const config = convict({
     format: '*',
     default: 'mongodb://localhost:27017/test',
     env: 'DB_URL',
+  },
+  github: {
+    clientId: {
+      doc: 'github client id',
+      format: '*',
+      env: 'GITHUB_CLIENT_ID',
+    },
+    clientSecret: {
+      doc: 'github client secret',
+      format: '*',
+      env: 'GITHUB_CLIENT_SECRET'
+    }
   }
 });
 
