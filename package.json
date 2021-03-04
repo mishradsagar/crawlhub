@@ -1,0 +1,27 @@
+{
+  "name": "crawlhub",
+  "version": "1.0.0",
+  "description": "a tool to fetch github users' information",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishradsagar/crawlhub.git"
+  },
+  "author": "Sagar Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishradsagar/crawlhub/issues"
+  },
+  "homepage": "https://github.com/mishradsagar/crawlhub#readme",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.2"
+  }
+}
