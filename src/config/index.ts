@@ -13,7 +13,7 @@ const config = convict({
     default: 8080,
     env: 'PORT',
   },
-  dbUrl: {
+  mongoUrl: {
     doc: 'Database url',
     format: '*',
     default: 'mongodb://localhost:27017/test',
