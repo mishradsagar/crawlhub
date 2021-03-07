@@ -1,0 +1,5 @@
+### Get user information
+GET http://localhost:8000/users/mishradsagar
+
+### Get user repositories
+GET http://localhost:8000/users/mishradsagar/repos
