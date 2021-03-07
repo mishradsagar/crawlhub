@@ -1,5 +1,5 @@
-import { NextFunction, Request, Response } from "express";
-import User from "./user.dto";
+import { NextFunction, Request, Response } from 'express';
+import User from './user.dto';
 import * as userService from './user.service';
 
 
