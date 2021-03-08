@@ -44,3 +44,11 @@ export default interface User {
     collaborators: number
   }
 }
+
+export interface UserRepo {
+  name: string,
+  description: string,
+  ownerHandle: string,
+  starsCount: number,
+  repoLink: string
+}
