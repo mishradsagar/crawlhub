@@ -23,10 +23,24 @@ and returns from mongoDB on subsequent requests for the same user.
 ```sh
 git clone <repo url>
 cd crawlhub
-```
-Add required env file to the project folder
-```sh
 npm i
+```
+
+Add required .env file to the project folder.
+
+Required environment variables:
+
+```sh
+PORT
+DB_URL
+NODE_ENV
+GITHUB_CLIENT_ID
+GITHUB_CLIENT_SECRET
+```
+
+To run the server:
+
+```sh
 npm run start
 ```
 
