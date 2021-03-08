@@ -8,9 +8,9 @@ const githubClient = new GithubClient();
 export const getUserRepositories = async (userHandle): Promise<UserRepo[]> => {
   const repos = await githubClient.getUserRepos(userHandle);
 
-  let result: UserRepo[] = [];
+  const result: UserRepo[] = [];
 
-  for (let repo of repos) {
+  for (const repo of repos) {
     result.push({
       name: repo.name,
       description: repo.description,
@@ -29,7 +29,7 @@ export const getUserInfo = async (userHandle): Promise<User> => {
   if (userInfo) {
     return userInfo;
   } else {
-    const userInfo = await githubClient.getUserInfo(userHandle);
+    userInfo = await githubClient.getUserInfo(userHandle);
     const user = await userModel.create(userInfo);
     return user;
   }
