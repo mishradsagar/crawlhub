@@ -2,9 +2,18 @@ import * as mongoose from 'mongoose';
 import User from './user.dto';
 
 const userSchema = new mongoose.Schema({
-  login: String,
-  id: Number,
-  node_id: String,
+  login: {
+    type: String,
+    required: true
+  },
+  id: {
+    type: Number,
+    required: true
+  },
+  node_id: {
+    type: String,
+    required: true
+  },
   avatar_url: String,
   gravatar_id: String,
   url: String,
