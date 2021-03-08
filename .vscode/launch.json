@@ -1,0 +1,25 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "node",
+          "request": "launch",
+          "name": "Debug Nest Framework",
+          "args": ["${workspaceFolder}/src/index.ts"],
+          "runtimeArgs": ["-r", "ts-node/register"],
+          "sourceMaps": true,
+          "cwd": "${workspaceRoot}",
+          "protocol": "inspector",
+          "env": {
+            "PORT": "8000",
+            "DB_URL": "mongodb://localhost:27017/test",
+            "NODE_ENV": "local",
+            "GITHUB_CLIENT_ID": "de9224b2ad96a1e54a5e",
+            "GITHUB_CLIENT_SECRET": "fbe604b9b5261c3ed3417b9bba0c3c355c16bb42"
+          }
+      }  
+  ]
+}
