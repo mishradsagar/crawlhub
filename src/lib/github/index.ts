@@ -31,5 +31,12 @@ export class GithubClient {
         const { body } = await this.restClient.callGet(path);
         return body;
     }
-    
+
+    async searchRepositories(repoName: string) {
+        const path = `/search/repositories?q=${encodeURIComponent(`${repoName} in:name`)}`
+        this.restClient.setOptions({ method: 'GET' });
+
+        const { body } = await this.restClient.callGet(path);
+        return body.items;
+    }
 }
