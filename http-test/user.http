@@ -3,7 +3,3 @@ GET http://localhost:8000/v1/users/mishradsagar
 
 ### Get user repositories
 GET http://localhost:8000/v1/users/mishradsagar/repos
-
-
-### search repositories
-GET http://localhost:8000/v1/repositories?repoName=express
